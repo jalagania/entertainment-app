@@ -18,7 +18,7 @@ function Search(props) {
     if (event.target.name === "home") {
       setSearchResultAmount(
         appData.filter((movie) =>
-          movie.title.toLowerCase().includes(event.target.value)
+          movie.title.toLowerCase().includes(event.target.value.toLowerCase())
         ).length
       );
     }
@@ -28,7 +28,7 @@ function Search(props) {
         appData
           .filter((movie) => movie.category === "Movie")
           .filter((movie) =>
-            movie.title.toLowerCase().includes(event.target.value)
+            movie.title.toLowerCase().includes(event.target.value.toLowerCase())
           ).length
       );
     }
@@ -38,7 +38,7 @@ function Search(props) {
         appData
           .filter((movie) => movie.category === "TV Series")
           .filter((movie) =>
-            movie.title.toLowerCase().includes(event.target.value)
+            movie.title.toLowerCase().includes(event.target.value.toLowerCase())
           ).length
       );
     }
@@ -48,7 +48,7 @@ function Search(props) {
         appData
           .filter((movie) => movie.isBookmarked === true)
           .filter((movie) =>
-            movie.title.toLowerCase().includes(event.target.value)
+            movie.title.toLowerCase().includes(event.target.value.toLowerCase())
           ).length
       );
     }
@@ -56,7 +56,9 @@ function Search(props) {
 
   useEffect(() => {
     setFilteredData(
-      appData.filter((movie) => movie.title.toLowerCase().includes(searchTerm))
+      appData.filter((movie) =>
+        movie.title.toLowerCase().includes(searchTerm).toLowerCase()
+      )
     );
   }, [searchTerm]);
 

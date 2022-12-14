@@ -65,6 +65,7 @@ h2 {
 }
 
 .page {
+  min-height: 85vh;
   padding: 1rem 3rem;
   margin-left: 9rem;
 }
@@ -96,6 +97,7 @@ h2 {
   }
 
   .page {
+    min-height: 75vh;
     margin: 0;
     padding: 0;
   }
