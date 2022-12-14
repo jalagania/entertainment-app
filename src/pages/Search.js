@@ -57,7 +57,7 @@ function Search(props) {
   useEffect(() => {
     setFilteredData(
       appData.filter((movie) =>
-        movie.title.toLowerCase().includes(searchTerm).toLowerCase()
+        movie.title.toLowerCase().includes(searchTerm.toLowerCase())
       )
     );
   }, [searchTerm]);
