@@ -1,0 +1,17 @@
+.attribution {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+a:link {
+  color: var(--red);
+}
+
+@media (max-width: 425px) {
+  .attribution {
+    font-size: 1.3rem;
+  }
+}
