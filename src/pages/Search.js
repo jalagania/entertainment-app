@@ -1,6 +1,6 @@
+import "./Search.css";
 import { useEffect } from "react";
 import { useGlobalContext } from "../context";
-import "./Search.css";
 
 function Search(props) {
   const {

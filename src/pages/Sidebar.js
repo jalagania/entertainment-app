@@ -1,6 +1,6 @@
 import "./Sidebar.css";
-import avatar from "./icons/image-avatar.png";
 import { NavLink } from "react-router-dom";
+import avatar from "./icons/image-avatar.png";
 
 function Sidebar() {
   return (

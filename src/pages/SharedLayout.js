@@ -1,6 +1,6 @@
+import { Outlet } from "react-router-dom";
 import Sidebar from "../pages/Sidebar";
 import Attribution from "../pages/Attribution";
-import { Outlet } from "react-router-dom";
 
 function SharedLayout() {
   return (
