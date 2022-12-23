@@ -6,8 +6,12 @@
   margin-top: 3rem;
 }
 
-a:link {
+.attribution a:link,
+.attribution a:visited {
   color: var(--red);
+}
+.attribution a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 425px) {
